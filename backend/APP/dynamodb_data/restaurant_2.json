@@ -1,0 +1,63 @@
+{
+  "areaId": 1,
+  "areaName": "関東地区",
+  "course": [
+    {
+      "comment": "～加茂茄子・鰹・太刀魚～と国産牛土鍋炊きを愉しむ２ｈ飲み放題付き",
+      "courseId": 1,
+      "courseMinutes": 120,
+      "courseName": "匠コース",
+      "price": 3000
+    },
+    {
+      "comment": "夏の味覚と牛フィレステーキ＆2時間飲み放題付プラン",
+      "courseId": 2,
+      "courseMinutes": 120,
+      "courseName": "涼香コース",
+      "price": 4000
+    },
+    {
+      "comment": "秋の山海の美味と牛フィレステーキ＆2時間飲み放題付",
+      "courseId": 3,
+      "courseMinutes": 120,
+      "courseName": "秋薫コース",
+      "price": 4000
+    },
+    {
+      "comment": "夏の厳選料理と松阪豚の水煙蒸し＆ゆったり3時間飲み放題付き",
+      "courseId": 4,
+      "courseMinutes": 180,
+      "courseName": "極コース",
+      "price": 6500
+    },
+    {
+      "comment": "プレミアムジャパニーズウイスキー　響・碧・山崎・白州が飲める飲み放題プラン",
+      "courseId": 5,
+      "courseMinutes": 120,
+      "courseName": "飲み放題2hアラカルト付き",
+      "price": 5000
+    }
+  ],
+  "shop": {
+    "averageBudget": 3000,
+    "closeDay": [
+      2
+    ],
+    "closeTime": "23:00",
+    "coordinate": {
+      "latitude": "35.7175778",
+      "longitude": "139.7028076"
+    },
+    "displayOrder": 2,
+    "imageUrl": "https://media.istockphoto.com/photos/fashion-stylish-restaurant-interior-picture-id478432824",
+    "lineAccountUrl": "https://line.me/R/ti/p/@xxxxxxxx",
+    "openTime": "10:00",
+    "seatsNumber": 110,
+    "shopAddress": "東京都豊島区○×△",
+    "shopId": 2,
+    "shopName": "レストラン 目白店",
+    "shopTel": "03-xxxx-xxxx",
+    "smokingFlg": 0
+  },
+  "shopId": 2
+}
