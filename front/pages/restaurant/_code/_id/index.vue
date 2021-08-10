@@ -188,12 +188,12 @@
                                         <v-text-field
                                             type="number"
                                             v-bind:label="$t('calendar.msg009')"
-                                            min="1"
+                                            min="0"
                                             v-bind:max="maxSeats"
                                             v-model="sendReserve.people"
                                             required
                                             v-bind:rules="[v=>!!v ||  $t('calendar.msg010'), v=>!(v&&parseInt(v,10)<=0) || $t('calendar.msg011')]"
-                                            oninput="if(Number(this.value) > Number(this.max)) this.value = this.max;"
+                                            v-on:change="modifyPeopleNum()"
                                         ></v-text-field> 
                                     </v-col>
                                 </v-row>
@@ -744,6 +744,19 @@ export default {
                 return true;
             }
         },
+        /**
+         * 人数入力制限 (keypressイベント)
+         */
+        modifyPeopleNum() {
+            if( Number(this.sendReserve.people) > Number(this.maxSeats)) {
+                this.sendReserve.people = this.maxSeats;
+            }
+            
+            if ( this.sendReserve.people < 1 || isNaN(this.sendReserve.people) ) {
+                this.sendReserve.people = 1;
+            }
+            this.sendReserve.people = Math.floor(this.sendReserve.people)
+         }
     }
 }
 </script>
